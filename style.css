@@ -11,8 +11,8 @@ body{
 
 .movie-image-item img{
     display: block;
-    width: 220px;
-    height: 315px;
+    max-width: 100%;
+    height: auto;
     border: 4px solid #fff;
     border-radius: 5px;
 }
@@ -39,11 +39,4 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-@media only screen and (max-width:768px){
-    .movie-image-item img{
-        max-width: 100%;
-        height: auto;
-        }
 }
