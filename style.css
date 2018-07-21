@@ -1,0 +1,40 @@
+body{
+    background: #171717;
+    box-sizing: border-box;
+}
+
+.posts{
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+
+.movie-image-item img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 4px solid #fff;
+    border-radius: 5px;
+}
+
+.movie-image-title{
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.05rem;
+}
+
+.movie-image-item a{
+    text-decoration: none;
+}
+
+.movie-image-year{
+    margin-top: -0.4rem;
+    font-size: 0.75rem;
+    color: #888;
+}
+
+.movie-image-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
