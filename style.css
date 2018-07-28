@@ -131,11 +131,34 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
     }
 
     .search input[type="text"]{
-        width: 190px;
+        width: 150px;
     }
 
     .navbar ul li:last-child{
         margin-left: 0;
     }
 
+    .single_poster{
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+/* SINGLE */
+
+.box{
+    width: 100%;
+    height: auto;
+    background: #ccc;
+    padding: 1em;
+}
+
+.single_poster{
+    width: 185px;
+    height: 278px;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: .5em;
+    box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
