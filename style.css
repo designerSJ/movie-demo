@@ -70,7 +70,7 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 
 .search-btn{
     padding: 8px 14px;
-    margin-left: 0.5em;
+    margin-left: 0;
 }
 
 .navbar ul li:nth-child(1){
@@ -128,4 +128,9 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
         margin-top: 5px;
         margin-bottom: 5px;
     }
+
+    #search input[type="text"]{
+        width: 190px;
+    }
+
 }
