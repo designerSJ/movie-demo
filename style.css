@@ -188,7 +188,7 @@ iframe{
 .iframe-container {
     position: relative;
     overflow: hidden;
-    padding-top: 56.25%;
+    padding-top: 56.25%; 
 }
 
 .pt-2{
@@ -225,12 +225,18 @@ iframe{
 }
 
 .box-3{
-    padding: 0 0 0 1em;
+    padding: 0;
 }
 
 .box-3 p{
     color: #333;
     margin-top: 15px;
+    text-align: center;
+}
+
+.box-3 p:nth-child(1)::before,
+.box-3 p:nth-child(1)::after{
+    content: " ---- ";
 }
 
 .related-movies{
@@ -244,10 +250,10 @@ iframe{
 }
 
 .related-movies a .poster{
+    margin: 0.5em;
     width: 185px;
     height: 278px;
     background-position: center;
     background-size: cover;
-    margin-bottom: .5em;
     box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
