@@ -1,7 +1,8 @@
 html, body{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
@@ -17,13 +18,19 @@ a{
 }
 
 .container{
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     margin: 0 auto;
     margin-top: 2em;
     max-width: 1024px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 2em;
     position: relative;
 }
@@ -34,7 +41,8 @@ a{
 header{
 background: #212121;
 padding: 3px 20px;
-box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+-webkit-box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+        box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
 
 .navbar ul {
@@ -48,9 +56,15 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
 
 .navbar ul{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 0;
 }
 
@@ -96,7 +110,8 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
     background-position: center;
     background-size: cover;
     margin-bottom: .5em;
-    box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
 
 .container .item p{
@@ -114,7 +129,10 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 /* MEDIA QUERY */
 @media (max-width: 768px){
     .navbar ul{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .search{
@@ -140,9 +158,14 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
     }
 
     .box-1{
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         display: initial;
-        align-items: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
 
     .info{
@@ -152,7 +175,9 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 
 @media (min-width: 769px){
     .single_poster{
-         flex: 0 0 185px;
+         -webkit-box-flex: 0;
+             -ms-flex: 0 0 185px;
+                 flex: 0 0 185px;
     }
        
 }
@@ -160,7 +185,8 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 /* SINGLE */
 
 .box{
-    box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     width: 100%;
     height: auto;
     background: #ccc;
@@ -173,7 +199,8 @@ box-shadow: 0 10px 17px rgba(0,0,0,0.15);
     background-position: center;
     background-size: cover;
     margin-bottom: .5em;
-    box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
 
 iframe{
@@ -197,6 +224,8 @@ iframe{
 
 .box-1{
     margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -215,7 +244,8 @@ iframe{
 
 .info table tr td {
     color: #333;
-    align-self: baseline;
+    -ms-flex-item-align: baseline;
+        align-self: baseline;
     padding: 3px 20px;
 
 }
@@ -240,9 +270,14 @@ iframe{
 }
 
 .related-movies{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 .related-movies a{
@@ -255,5 +290,6 @@ iframe{
     height: 278px;
     background-position: center;
     background-size: cover;
-    box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+    -webkit-box-shadow: 0 10px 17px rgba(0,0,0,0.15);
+            box-shadow: 0 10px 17px rgba(0,0,0,0.15);
 }
