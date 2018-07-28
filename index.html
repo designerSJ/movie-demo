@@ -1,94 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movies Torrent</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movies</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-                <a class="navbar-brand" href="#">Old Bollywood Movies</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Browse Movies</a>
-                    </li>
-                </ul>
-                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Login</button>
-                <button class="btn btn-outline-secondary my-2 my-sm-0 ml-2" type="submit">Register</button>
-            </div>
-            </nav>
-            <div class="search container">
-                <form class="form-inline mt-4">
-                        <input class="form-control mr-sm-2 flex-fill" type="search" placeholder="Search Movie..." aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </header>
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#"><span id="brand">Movies</span></a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Browse Movies</a></li>
+        <div id="search">
+          <input type="text" name="search" placeholder="Search Movies">
+          <button class="search-btn">Search</button>
+        </div>
+      </ul>
+    </nav>
+  </header>
 
-    <div class="posts container mt-4">
-            <div class="images row">
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                    <img src="images/Padosan.jpg">
-                    <a href="#"><h5 class="movie-image-title">Padosan</h5></a>
-                    <p class="movie-image-year">1968</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                        <img src="images/Ittefaq.jpg">
-                        <a href="#"><h5 class="movie-image-title">Ittefaq</h5></a>
-                        <p class="movie-image-year">1969</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                    <img src="images/Padosan.jpg">
-                    <a href="#"><h5 class="movie-image-title">Padosan</h5></a>
-                    <p class="movie-image-year">1968</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                        <img src="images/Ittefaq.jpg">
-                        <a href="#"><h5 class="movie-image-title">Ittefaq</h5></a>
-                        <p class="movie-image-year">1969</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                    <img src="images/Padosan.jpg">
-                    <a href="#"><h5 class="movie-image-title">Padosan</h5></a>
-                    <p class="movie-image-year">1968</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                        <img src="images/Ittefaq.jpg">
-                        <a href="#"><h5 class="movie-image-title">Ittefaq</h5></a>
-                        <p class="movie-image-year">1969</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                    <img src="images/Padosan.jpg">
-                    <a href="#"><h5 class="movie-image-title">Padosan</h5></a>
-                    <p class="movie-image-year">1968</p>
-                </div>
-                <div class="movie-image-item col-md-4 col-lg-3 col-6">
-                        <img src="images/Ittefaq.jpg">
-                        <a href="#"><h5 class="movie-image-title">Ittefaq</h5></a>
-                        <p class="movie-image-year">1969</p>
-                </div>
-                
-            </div>
-    </div>
+  <div class="container">
+    <a href="#" class="item">
+      <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w185_and_h278_bestv2/WLQN5aiQG8wc9SeKwixW7pAR8K.jpg')"></div>
+      <p>Movie Name 1</p>
+      <p>Year</p>
+      
+    </a>
+    <a href="#" class="item">
+      <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w185_and_h278_bestv2/z4x0Bp48ar3Mda8KiPD1vwSY3D8.jpg')"></div>
+      <p>Movie Name 2</p>
+      <p>Year</p>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    </a>
+    <a href="#" class="item">
+      <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w185_and_h278_bestv2/e1mjopzAS2KNsvpbpahQ1a6SkSn.jpg')"></div>
+      <p>Movie Name 3</p>
+      <p>Year</p>
 
+    </a>
+    <a href="#" class="item">
+      <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w185_and_h278_bestv2/WLQN5aiQG8wc9SeKwixW7pAR8K.jpg')"></div>
+      <p>Movie Name 1</p>
+      <p>Year</p>
+
+    </a>
+    <a href="#" class="item">
+      <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w185_and_h278_bestv2/z4x0Bp48ar3Mda8KiPD1vwSY3D8.jpg')"></div>
+      <p>Movie Name 2</p>
+      <p>Year</p>
+
+    </a>
+    <a href="#" class="item">
+      <div class="poster" style="background-image: url('https://image.tmdb.org/t/p/w185_and_h278_bestv2/e1mjopzAS2KNsvpbpahQ1a6SkSn.jpg')"></div>
+      <p>Movie Name 3</p>
+      <p>Year</p>
+
+    </a>
+  </div>
+  
+<script src="js/main.js"></script>
 </body>
 </html>
